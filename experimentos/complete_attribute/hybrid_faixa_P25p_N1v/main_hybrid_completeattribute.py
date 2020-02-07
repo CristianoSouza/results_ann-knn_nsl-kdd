@@ -41,7 +41,7 @@ hybrid_classifier = HybridClassifier()
 #hybrid_classifier.setLowerThreshold(-0.95)
 #hybrid_classifier.setUpperThreshold(0.95)
 hybrid_classifier.setPercentilFaixaSup(25)
-hybrid_classifier.setPercentilFaixaInf(25)
+hybrid_classifier.setPercentilFaixaInf(1)
 #hybrid_classifier.setLimiteFaixaInf(-0.2)
 #hybrid_classifier.setLimiteFaixaSup(0.1)
 hybrid_classifier.setRna(rna)
@@ -63,7 +63,7 @@ cross.setPreprocessor(preprocessor)
 
 cross.setFilePath("../../bases/sub_bases_train+_nslkdd/")
 
-cross.setResultPath("../../results/complete_attribute/hybrid_auto_faixa_25p_25p_training_info/")
+cross.setResultPath("../../results/complete_attribute/hybrid_auto_faixa_100p_25p_training_info/")
 cross.setClassifier(hybrid_classifier)
 
 cross.setEvaluateModule(evaluate)
